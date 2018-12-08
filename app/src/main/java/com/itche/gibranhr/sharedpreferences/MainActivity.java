@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         et1=(EditText)findViewById(R.id.et1);
-        textView=(TextView)findViewById(R.id.textView);
 
         SharedPreferences prefe=getSharedPreferences("datos", Context.MODE_PRIVATE);
         et1.setText(prefe.getString("mail",""));
